@@ -1,0 +1,32 @@
+.projetos__titulo {
+    text-align: center;
+}
+
+.projetos__itens {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+}
+
+.projetos__link {
+    text-decoration: none;
+    color: var(--cor-quarta);
+    background-color: var(--cor-secundaria);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .projetos__titulo {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .projetos__itens {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20vw;
+    }
+}

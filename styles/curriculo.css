@@ -1,0 +1,22 @@
+.curriculo__download {
+    text-align: center;
+    margin: 3em;
+}
+
+.curriculo__link {
+    text-decoration: none;
+    color: var(--cor-quarta);
+    background-color: var(--cor-secundaria);
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+
+.curriculo {
+    margin: 2em;
+}
+
+@media (min-width: 1024px){
+    .curriculo {
+        margin: 5em;
+    }
+}

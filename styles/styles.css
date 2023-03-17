@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+:root {
+    --cor-principal: #03001C;
+    --cor-secundaria: #301E67;
+    --cor-terciaria: #5B8FB9;
+    --cor-quarta: #B6EADA;
+
+    --fonte-principal: 'Inconsolata', Sans-serif
+}
+
+body {
+    background-color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    color: var(--cor-terciaria);}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.cabecalho__menu {
+    text-decoration: none;
+    color: var(--cor-quarta);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.30em;
+}
+
+.cabecalho__menu-imagem {
+    width: 7%;
+    display: none;
+}
+
+.redes {
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+
+.redes__link {
+    text-decoration: none;
+    padding: 1em;
+}
+
+.descricao {
+    text-align: center;
+    margin: 3em 0;
+}
+
+.descricao__imagem {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.rodape {
+    margin: 10em 0 2em 0;
+}
+
+.rodape__texto {
+    color: var(--cor-quarta);
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .cabecalho__menu {
+        padding: 1em;
+    }
+
+    .menu {
+        margin: 2em 0 0 0;
+    }
+
+    .descricao {
+        display: flex;
+        align-items: center;
+    }
+
+    .descricao__imagem {
+        width: 30%;
+        margin: 0 0 0 3em;
+    }
+
+    .descricao__caixa {
+        text-align: justify;
+        margin: 0 2em;
+    }
+
+}
+
+@media (min-width: 1728px) {
+    .cabecalho__menu:hover {
+        color: var(--cor-secundaria);
+        transition: 1s;
+    }
+
+    .descricao__imagem {
+        width: 20%;
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+        margin: 0 2em;
+    }
+}
